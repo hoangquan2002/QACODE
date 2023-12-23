@@ -10,7 +10,7 @@ output_dir=../output/$2
 train_file=$data_dir/$lang/train/
 dev_file=$data_dir/$lang/dev/
 test_file=$data_dir/$lang/test/
-epochs=20
+epochs=10
 pretrained_model=microsoft/codebert-base #Roberta: roberta-base
 
 CUDA_VISIBLE_DEVICES=$1 python run.py \

@@ -12,10 +12,8 @@ dev_file=$data_dir/$lang/dev/
 test_file=$data_dir/$lang/test/
 epochs=5
 pretrained_model=microsoft/codebert-base #Roberta: roberta-base
-load_model_path=/content/QACODE/codeBERT/java_codeqa.bin
 CUDA_VISIBLE_DEVICES=$1 python run.py \
     --model_type roberta \
-    --load_model_path $load_model_path\
     --model_name_or_path $pretrained_model \
     --train_filename $train_file \
     --dev_filename $dev_file \

@@ -10,7 +10,7 @@ output_dir=../output/$2
 train_file=$data_dir/$lang/train/
 dev_file=$data_dir/$lang/dev/
 test_file=$data_dir/$lang/test/
-epochs=2
+epochs=1
 pretrained_model=microsoft/codebert-base #Roberta: roberta-base
 #load_model_path=../output/CodeBERT/checkpoint-last/pytorch_model.bin --load_model_path $load_model_path\
 
